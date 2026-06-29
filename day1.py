@@ -9,14 +9,14 @@ print("n\--- EXERICISE 1: Print & Variables ---")
 # Task 1.1 Print Your Name
 # todo: Replace 'Your name ' With your actual name
 
-name = "shubham sawant"
+name = "siraj paril"
 
 print("My name is" , name)
 
 # create a variables and print them
 
 age = 21
-city = "Gokul shirgaon Kolhapur"
+city = "pune viraj nagar"
 
 print(f"my name is {name} i am {age} years old I live in {city}")
 
@@ -133,9 +133,9 @@ print("\n--- EXERCISE 4: Dictonaries ---")
 # Task 4.1: Create a Dictionaries(key - Value pairs)
 
 person = {
-   "name":"shubham",
+   "name":"sidharth",
    "age":21,
-   "city":"kolhapur",
+   "city":"pune",
    "job":"Youtuber"
 }
 
@@ -160,7 +160,7 @@ for key, value in person.items():
 # Task 4.5: Multiple dictionaries in a List
 
 students = [
-   {"name": "shubham", "score": 85},
+   {"name": "kiran", "score": 85},
    {"name": "sahil", "score":90},
    {"name": "sidharth" , "score":78 }
 ]
@@ -256,9 +256,9 @@ print(f"5 + 6: {sumofnumber}")
 
 def get_person_info():
     """ Return person informaction"""
-    name = "shubham"
+    name = "siraj"
     age = 21
-    city = "Kolhapur"
+    city = "pune"
     return name , age, city
 
 name ,age , city = get_person_info()
@@ -272,8 +272,8 @@ def introduce(name , job="Engineer"): # Default Value
 
     return f"{name} is a {job}"
 
-print(introduce("shubham"))
-print(introduce("shubham" , "gamer"))
+print(introduce("shubh"))
+print(introduce("shubh" , "gamer"))
 
 # Task 6.5: Function that processes a list 
 
@@ -390,7 +390,7 @@ def calculator_grade(score):
 # Test With multiple Student
 
 student_scores = [
-    {"name":"shubham" , "score":95},
+    {"name":"shivag" , "score":95},
     {"name":"sahil", "score":98},
     {"name":"viraj", "score":35},
     {"name":"Parth", "score":65}
@@ -426,7 +426,7 @@ for student in student_scores:
 
     contacts = [
 
-        {"name": "shubham", "phone": 8855-4564, "email": "smsepic10100@gmail.com"},
+        {"name": "sidan", "phone": 8855-4564, "email": "smsepic10100@gmail.com"},
         {"name": "sidharth", "phone": 8855-5485, "email": "nirag0100@gmail.com"},
         {"name": "siara", "phone": 8855-6598, "email": "simaranc10100@gmail.com"},
         {"name": "simaran", "phone": 8855-1462, "email": "surajsira@gmail.com"},
