@@ -450,12 +450,24 @@ for contact in contacts:
         print(f"\nFound: {search_name}")
         print(f"  Phone: {contact['phone']}")
         print(f"  email: {contact["email"]}")
+        choise = str(input("do you want to remove this name(yes / no): "))
+        if choise == "yes":
+            contacts["name"].remove
+            contacts["phone"].remove
+            contacts["email"].remove
+          
+
         Found = True
         break
 
 if not found:
     print(f"\n{search_name} not found in contacts")
 
+
+# remove contact 
+
+
+    print(f"\n")
 print("\n" + "=" * 50)
 print("Congratulations! You Completed Day 1!")
 print("=" * 50)
