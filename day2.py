@@ -243,4 +243,4 @@ team = {
    "player4": {"name": "viraj", "score": 88}
 }
 
-print(f"Team": {team})
+print(f"Team: {team}")
