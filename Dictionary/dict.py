@@ -36,7 +36,7 @@ values = student.values()
 print(f"All VAlues: {list[values]}")
 
 # Task 4.2: Updateing dictionaries
-print("\nTask 4.2: Update Method")
+print("\nTask 4.2: Update Method") 
 student.update({"age": 22, "grade": "A+"})
 print(f"After Update: {student}")
 

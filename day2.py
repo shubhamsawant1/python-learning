@@ -233,3 +233,14 @@ print("\nTask 4.3: Deleting items")
 if "email" in student:
    del student["email"]
 print(f"After deleting email: {student}")
+
+# Task 4.4: Nested dictionaries (dict inside dict)
+print("\nTask 4.4: Nested dictionaries")
+team = {
+   "player1": {"name": "alice", "score": 85},
+   "player2": {"name": "siraj", "score": 95},
+   "player3": {"name": "simaran", "score":45},
+   "player4": {"name": "viraj", "score": 88}
+}
+
+print(f"Team": {team})
