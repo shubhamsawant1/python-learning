@@ -244,3 +244,7 @@ team = {
 }
 
 print(f"Team: {team}")
+
+# Access nested value
+alice_score = team["player1"]["score"]
+print(f"Alice's score: {alice_score}")
