@@ -62,4 +62,26 @@ alice_score = team["player1"]["score"]
 print(f"Alice's score: {alice_score}")
 
 for player in team:
-   print(f"{team[player]}")
+   print(f"{team[player]}") # comprehensive dataset
+
+
+# Task 4.5: List of dictionaries (very common)
+print("\nTask 4.5: List of dictionaries")
+students = [
+   {"name": "Alice", "age": 21, "grade": "A"},
+   {"name": "bob", "age": 22, "grade": "B"},
+   {"name": "Carol", "age": 26, "grade": "C"}
+]
+
+# Loop and access 
+print("Student and their grades:")
+for student in students:
+   print(f"    {student['name']}: {student['grade']}")
+
+# Find specific student
+search_name = str(input("Enter student name: "))
+for student in students:
+   if student['name'] == search_name:
+      print(f" Found {search_name}: age {student['age']}")
+
+print("\nCHECKPOINT: Can you work with nested dictionaries?")
