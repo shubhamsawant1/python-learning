@@ -94,3 +94,29 @@ except ValueError:
    print("Please enter a valid number")
 except IndexError:
    print("That index doesn't exits!")
+
+
+# Task 2.3: Finally (runs no matter what)
+print("\nFinally block")
+try:
+   result = 10 / 2
+   print(f"Result: {result}")
+except ZeroDivisionError:
+   print("Can't divide by zero")
+finally:
+   print("(This always runs)")
+
+   
+# Task 2.4: Safe file operations 
+print("\nTask 2.4: Working with files safely")
+
+try:
+   # Try to open a file
+   file = open("test.txt", "r")
+   content = file.read()
+   file.close()
+except FileNotFoundError:
+   print("File doesn't exits yet (that's OK)")
+
+
+print("\nCHECKPOINT: Do you understand try/except")
