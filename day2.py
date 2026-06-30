@@ -99,14 +99,16 @@ except IndexError:
 # Task 2.3: Finally (runs no matter what)
 print("\nFinally block")
 try:
-   result = 10 / 2
+   num_1 = int(input("Enter number 1: "))
+   num_2 = int(input("Enter number 2: "))
+   result = num_1 / num_2
    print(f"Result: {result}")
 except ZeroDivisionError:
    print("Can't divide by zero")
 finally:
    print("(This always runs)")
 
-   
+
 # Task 2.4: Safe file operations 
 print("\nTask 2.4: Working with files safely")
 
@@ -120,3 +122,16 @@ except FileNotFoundError:
 
 
 print("\nCHECKPOINT: Do you understand try/except")
+print("=" * 60)
+# EXERCISE 3: Advanced Lists & List Methods (15 min)
+print("=" * 60)
+# Task 3.1: List Methods 
+print('Task 3.1: List methos')
+fruits = ['apple', 'banana', 'orange']
+print(f"Original: {fruits}")
+
+for fruit in fruits:
+   print(f"  -{fruit}")
+
+fruits.append("grape")
+print(f"After append: {fruits}")
