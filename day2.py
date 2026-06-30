@@ -248,3 +248,45 @@ print(f"Team: {team}")
 # Access nested value
 alice_score = team["player1"]["score"]
 print(f"Alice's score: {alice_score}")
+
+# Task 4.5: List of dictionaries (very common)
+print("\nTask 4.5: List of dictionaries")
+students = [
+   {"name": "Alice", "age": 21, "grade": "A"},
+   {"name": "bob", "age": 22, "grade": "B"},
+   {"name": "Carol", "age": 26, "grade": "C"}
+]
+
+# Loop and access 
+print("Student and their grades:")
+for student in students:
+   print(f"    {student['name']}: {student['grade']}")
+
+# Find specific student
+search_name = str(input("Enter student name: "))
+for student in students:
+   if student['name'] == search_name:
+      print(f" Found {search_name}: age {student['age']}")
+
+print("\nCHECKPOINT: Can you work with nested dictionaries?")
+
+# EXERCISE 5: More Advanced Functions (20 min)
+
+# Task 5.1: Functions with default parameters
+print("Task 5.1: Default parameters")
+def greet_person(name, greeting="Hello"):
+   return f"{greeting}, {name}!"
+
+print(greet_person("Alice"))
+print(greet_person("Bob", "Hi"))
+print(greet_person("Carol", "Hola"))
+
+# Task 5.2: Functions with "args (variable number of arguments)"
+print("\nTask 5.2: Variables number of argument (*args)")
+def add_numbers(*numbers):
+    """ Add any numbers together"""
+    total = sum(numbers)
+    return total
+
+print(f"add_numbers(1,2) = {add_numbers(1, 2)}")
+print(f"add_numbers(1, 2, 3, 4, 5, 6) = {add_numbers(1, 2, 3, 4, 5, 6)}")

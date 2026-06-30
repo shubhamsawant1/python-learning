@@ -85,3 +85,24 @@ for student in students:
       print(f" Found {search_name}: age {student['age']}")
 
 print("\nCHECKPOINT: Can you work with nested dictionaries?")
+
+# EXERCISE 5: More Advanced Functions (20 min)
+
+# Task 5.1: Functions with default parameters
+print("Task 5.1: Default parameters")
+def greet_person(name, greeting="Hello"):
+   return f"{greeting}, {name}!"
+
+print(greet_person("Alice"))
+print(greet_person("Bob", "Hi"))
+print(greet_person("Carol", "Hola"))
+
+# Task 5.2: Functions with "args (variable number of arguments)"
+print("\nTask 5.2: Variables number of argument (*args)")
+def add_numbers(*numbers):
+    """ Add any numbers together"""
+    total = sum(numbers)
+    return total
+
+print(f"add_numbers(1,2) = {add_numbers(1, 2)}")
+print(f"add_numbers(1, 2, 3, 4, 5, 6) = {add_numbers(1, 2, 3, 4, 5, 6)}")
